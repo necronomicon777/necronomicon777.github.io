@@ -1,4 +1,4 @@
-<?php
+п»ї<?php
 session_start();
 
 $AuthorizeSession = & $_SESSION['Auth']; 
@@ -23,7 +23,7 @@ echo '<html>
 <meta http-equiv="Content-Language" content="ru">
 <meta http-equiv="Refresh" content="25; URL=game.php">
 
-<title>Шашки-онлайн</title>
+<title>РЁР°С€РєРё-РѕРЅР»Р°Р№РЅ</title>
 </head>
 
 <body style="font-family: Arial; font-size: 10px">
@@ -35,7 +35,7 @@ echo '<html>
 			<tr>
 				<td width="151" style="font-family: arial,sans-serif">
 				<img border="0" src="imgs/logo.gif" width="151" height="37"></td>
-				<td style="background-color: #A4B7DB; font-family:arial,sans-serif"><b>&nbsp; Добро пожаловать '.$AuthorizeSession['GAMER_LOGIN'].'</b></td>
+				<td style="background-color: #A4B7DB; font-family:arial,sans-serif"><b>&nbsp; Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ '.$AuthorizeSession['GAMER_LOGIN'].'</b></td>
 			</tr>
 		</table>
 		</td>
@@ -44,34 +44,34 @@ echo '<html>
 	<td width="54%" style="font-family: arial,sans-serif">
 
 		<p align="center"><b><font size="4" color="#A4B7DB">
-		<a href="top10.php">ТОП10&nbsp; лучших&nbsp; игроков</a></font></b></td>
+		<a href="top10.php">РўРћРџ10&nbsp; Р»СѓС‡С€РёС…&nbsp; РёРіСЂРѕРєРѕРІ</a></font></b></td>
 			<td width="45%" style="font-family: arial,sans-serif">
 		<table width="100%" id="table11" bgcolor="#CCFF99">
 			<tr>
 				<td>
 				<form method="POST" enctype="windows-1251" action="gameprocess.php?create=1">
-					<p align="center"><b><font face="Arial">Создайте свою&nbsp; 
-					игру</font></b></p>
+					<p align="center"><b><font face="Arial">РЎРѕР·РґР°Р№С‚Рµ СЃРІРѕСЋ&nbsp; 
+					РёРіСЂСѓ</font></b></p>
 					<table width="100%" id="table12">
 						<tr>
 							<td width="168">
-							<p align="right"><font size="2" face="Arial">Ваши 
-							фигуры<span lang="en-us">:</span></font></td>
+							<p align="right"><font size="2" face="Arial">Р’Р°С€Рё 
+							С„РёРіСѓСЂС‹<span lang="en-us">:</span></font></td>
 							<td><font face="Arial">
 							<select size="1" name="sel_figuri" style="font-family: Arial; font-size: 10px">
-							<option selected value="white_fig">белые</option>
-							<option value="black_fig">черные</option>
+							<option selected value="white_fig">Р±РµР»С‹Рµ</option>
+							<option value="black_fig">С‡РµСЂРЅС‹Рµ</option>
 							</select></font></td>
 						</tr>
 						<tr>
 							<td width="168">
-							<p align="right"><font size="2">Таймаут игры</font></td>
+							<p align="right"><font size="2">РўР°Р№РјР°СѓС‚ РёРіСЂС‹</font></td>
 							<td><select size="1" name="timeout" style="font-family: Arial; font-size: 10px">
 							<option value="3">3</option>
 							<option value="5" selected>5</option>
 							<option value="10">10</option>
 							
-							</select><font size="2"> минут неактивноси</font></td>
+							</select><font size="2"> РјРёРЅСѓС‚ РЅРµР°РєС‚РёРІРЅРѕСЃРё</font></td>
 						</tr>
 						<tr>
 							<td width="168">&nbsp;</td>
@@ -80,7 +80,7 @@ echo '<html>
 						<tr>
 							<td width="168">&nbsp;</td>
 							<td><font face="Arial">
-							<input type="submit" value="создать игру" name="create_game" style="font-family: Arial; font-size: 10px"></font></td>
+							<input type="submit" value="СЃРѕР·РґР°С‚СЊ РёРіСЂСѓ" name="create_game" style="font-family: Arial; font-size: 10px"></font></td>
 						</tr>
 					</table>
 				</form></td>
@@ -94,33 +94,33 @@ echo '<html>
 			<table width="55%" id="table8">
 				<tr>
 					<td colspan="3" bgcolor="#ECECFF">
-					<p align="center">Игры&nbsp; доступные на сервере</td>
+					<p align="center">РРіСЂС‹&nbsp; РґРѕСЃС‚СѓРїРЅС‹Рµ РЅР° СЃРµСЂРІРµСЂРµ</td>
 				</tr>
 				<tr>
-					<td width="38%" bgcolor="#A4B7DB"><font size="2">Хозяин  игры</font></td>
-					<td width="33%" bgcolor="#A4B7DB"><font size="2">Шашки хозяина игры</font></td>
+					<td width="38%" bgcolor="#A4B7DB"><font size="2">РҐРѕР·СЏРёРЅ  РёРіСЂС‹</font></td>
+					<td width="33%" bgcolor="#A4B7DB"><font size="2">РЁР°С€РєРё С…РѕР·СЏРёРЅР° РёРіСЂС‹</font></td>
 					<td width="25%" bgcolor="#A4B7DB"><font size="2">
-					Присоединиться</font></td>
+					РџСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ</font></td>
 				</tr>';
-			   /*Соединяемся  с сервером*/
+			   /*РЎРѕРµРґРёРЅСЏРµРјСЃСЏ  СЃ СЃРµСЂРІРµСЂРѕРј*/
 				$link = mysql_connect($dbServer,$dbUser,$dbPass) 	or exit("Connection is fall");
 	
-			/*Выбираем базу данных */
+			/*Р’С‹Р±РёСЂР°РµРј Р±Р°Р·Сѓ РґР°РЅРЅС‹С… */
 				if (mysql_select_db("shashki")) {
 					$SQLrequest = "SELECT t1.OG_CODE,  t1.OG_GAMER1_FIG,  t2.GAMER_LOGIN,  t2.GAMER_CODE FROM GAMER AS t2, ONLINE_GAME AS t1 
 										WHERE t2.GAMER_CODE =t1.OG_GAMER1 and t1.OG_WAIT = true";
 					$result = mysql_query( $SQLrequest);
 				    $colorflag=true;
-					$gamer_fig='Белые';
+					$gamer_fig='Р‘РµР»С‹Рµ';
 					while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
 						if ($colorflag)
 							$color = '#ECECFF';
 						else
 							$color = '#DFDFFF';
 						if ($line['OG_GAMER1_FIG'] == 2) 
-							$gamer_fig = 'Черные';
+							$gamer_fig = 'Р§РµСЂРЅС‹Рµ';
 						else
-							$gamer_fig = 'Белые';
+							$gamer_fig = 'Р‘РµР»С‹Рµ';
 							
 						$href_join = 'gameprocess.php?OG='.$line['OG_CODE'].'&join=1';
 						

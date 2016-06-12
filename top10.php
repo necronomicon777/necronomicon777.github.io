@@ -1,4 +1,4 @@
-<?php
+п»ї<?php
 session_start();
 
 $AuthorizeSession = & $_SESSION['Auth']; 
@@ -18,7 +18,7 @@ if ($AuthorizeSession['isAutharize']==false){
 $link = mysql_connect($dbServer,$dbUser,$dbPass) or exit("Connection is fall");
 		if (mysql_select_db("shashki")) {
 			$SQLrequest = "SELECT * from GAMER where GAMER_WINS>0 OR  GAMER_PARITET>0  ORDER BY GAMER_WINS DESC, GAMER_LOSE, GAMER_PARITET LIMIT 10";
-			if ($result = mysql_query( $SQLrequest)) { // вытаскиваем из  базы  запись  юзера
+			if ($result = mysql_query( $SQLrequest)) { // РІС‹С‚Р°СЃРєРёРІР°РµРј РёР·  Р±Р°Р·С‹  Р·Р°РїРёСЃСЊ  СЋР·РµСЂР°
 			//$gamerinfo = mysql_fetch_array($result, MYSQL_ASSOC);
 	echo '		<html>
 
@@ -27,7 +27,7 @@ $link = mysql_connect($dbServer,$dbUser,$dbPass) or exit("Connection is fall");
 <meta http-equiv="Content-Language" content="ru">
 <meta http-equiv="Refresh" content="55; URL=game.php">
 
-<title>ШАШКИ-ОНЛАЙН: Десятка лучшех</title>
+<title>РЁРђРЁРљР-РћРќР›РђР™Рќ: Р”РµСЃСЏС‚РєР° Р»СѓС‡С€РµС…</title>
 </head>
 
 <body>
@@ -47,19 +47,19 @@ $link = mysql_connect($dbServer,$dbUser,$dbPass) or exit("Connection is fall");
 			</tr>
 			<tr>
 				<td>
-				<p align="center"><b><font color="#333399">Десятка&nbsp; лучших&nbsp; 
-				игроков</font></b></td>
+				<p align="center"><b><font color="#333399">Р”РµСЃСЏС‚РєР°&nbsp; Р»СѓС‡С€РёС…&nbsp; 
+				РёРіСЂРѕРєРѕРІ</font></b></td>
 			</tr>
 		</table>
 		<p align="center">&nbsp;</p>
 		<table width="100%" id="table2" style="border: 1px dotted #D7E3FF">
 			<tr>
 				<td width="28%" align="center" style="border: 1px dotted #D7E3FF">
-				<b><font size="2">место</font></b></td>
+				<b><font size="2">РјРµСЃС‚Рѕ</font></b></td>
 				<td width="36%" align="center" style="border: 1px dotted #D7E3FF">
-				<b><font size="2">имя</font></b></td>
+				<b><font size="2">РёРјСЏ</font></b></td>
 				<td width="33%" align="center" style="border: 1px dotted #D7E3FF">
-				<b><font size="2">побед</font></b></td>
+				<b><font size="2">РїРѕР±РµРґ</font></b></td>
 			</tr>
 			';
 			$i=1;
@@ -78,8 +78,8 @@ $link = mysql_connect($dbServer,$dbUser,$dbPass) or exit("Connection is fall");
 				
 			
 			</table>
-		<p align="center">&nbsp;<p align="center"><b>Нажмите <a href="game.php">здесь</a> чтобы&nbsp; 
-		вернуться в игру</b><p align="center">&nbsp;</td>
+		<p align="center">&nbsp;<p align="center"><b>РќР°Р¶РјРёС‚Рµ <a href="game.php">Р·РґРµСЃСЊ</a> С‡С‚РѕР±С‹&nbsp; 
+		РІРµСЂРЅСѓС‚СЊСЃСЏ РІ РёРіСЂСѓ</b><p align="center">&nbsp;</td>
 		<td height="279">&nbsp;</td>
 	</tr>
 	<tr>

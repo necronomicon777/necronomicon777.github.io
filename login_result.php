@@ -1,5 +1,5 @@
-<?php
-//session_start(); //стартуем сессию
+п»ї<?php
+//session_start(); //СЃС‚Р°СЂС‚СѓРµРј СЃРµСЃСЃРёСЋ
 
 if (isset($_SESSION['Auth']['isAutharize'])){
 	echo '
@@ -13,14 +13,14 @@ if (isset($_SESSION['Auth']['isAutharize'])){
 		
 		if ($_SESSION['Auth']['isAutharize']==false){ 
 			echo 'index.html"> 
-				 <title>Ошибка авторизации</title>
+				 <title>РћС€РёР±РєР° Р°РІС‚РѕСЂРёР·Р°С†РёРё</title>
 				 </head>
 				 <body>
 				 ';
 		}
 		else{
 			echo 'game.php"> 
-			<title>Успешная авторизация</title>
+			<title>РЈСЃРїРµС€РЅР°СЏ Р°РІС‚РѕСЂРёР·Р°С†РёСЏ</title>
 			</head>
 			<body>
 			';
@@ -40,18 +40,18 @@ if (isset($_SESSION['Auth']['isAutharize'])){
 				
 	if 	($_SESSION['Auth']['isAutharize']==false){
 		echo  '#FF5050">
-				<p align="center">Вы неверно&nbsp; ввели имя пользователя или пароль </p>
-				<p align="center"><b>Нажмите <a href="index.html">здесь</a> чтобы&nbsp; 
-				пройти авторизацию&nbsp; повторно</b></td>
+				<p align="center">Р’С‹ РЅРµРІРµСЂРЅРѕ&nbsp; РІРІРµР»Рё РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РёР»Рё РїР°СЂРѕР»СЊ </p>
+				<p align="center"><b>РќР°Р¶РјРёС‚Рµ <a href="index.html">Р·РґРµСЃСЊ</a> С‡С‚РѕР±С‹&nbsp; 
+				РїСЂРѕР№С‚Рё Р°РІС‚РѕСЂРёР·Р°С†РёСЋ&nbsp; РїРѕРІС‚РѕСЂРЅРѕ</b></td>
 				<td height="197">&nbsp;</td>
 			</tr>';
 	}
 	else
 		echo  '#99FF99">
-				<p align="center">Вы авторизованы как '.$_SESSION['Auth']['GAMER_LOGIN'].' </p>
-				<p align="center">Сейчас вы войдёте в игру автоматически </p>
-				<p align="center"><b>Нажмите <a href="game.php">здесь</a> чтобы&nbsp; 
-				войти в игру немедленно</b></td>
+				<p align="center">Р’С‹ Р°РІС‚РѕСЂРёР·РѕРІР°РЅС‹ РєР°Рє '.$_SESSION['Auth']['GAMER_LOGIN'].' </p>
+				<p align="center">РЎРµР№С‡Р°СЃ РІС‹ РІРѕР№РґС‘С‚Рµ РІ РёРіСЂСѓ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё </p>
+				<p align="center"><b>РќР°Р¶РјРёС‚Рµ <a href="game.php">Р·РґРµСЃСЊ</a> С‡С‚РѕР±С‹&nbsp; 
+				РІРѕР№С‚Рё РІ РёРіСЂСѓ РЅРµРјРµРґР»РµРЅРЅРѕ</b></td>
 				<td height="197">&nbsp;</td>
 			</tr>';
 	
